@@ -1,11 +1,16 @@
 {
-  "name": "n8n-monorepo",
-  "version": "1.77.0",
-  "private": true,
-  "engines": {
-    "node": ">=20.15",
-    "pnpm": ">=9.15"
+  "name": "n8n-render",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "n8n start --tunnel"
   },
+  "dependencies": {
+    "n8n": "^1.40.0"  // Phiên bản mới nhất
+  },
+  "engines": {
+    "node": ">=20.15"
+  }
+},
   "packageManager": "pnpm@9.15.5",
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
@@ -98,18 +103,5 @@
       "@types/uuencode@0.0.3": "patches/@types__uuencode@0.0.3.patch",
       "vue-tsc@2.1.10": "patches/vue-tsc@2.1.10.patch"
     }
-  }
-}
-{
-  "name": "n8n-render",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "n8n start --tunnel"
-  },
-  "dependencies": {
-    "n8n": "^1.40.0"  // Phiên bản mới nhất
-  },
-  "engines": {
-    "node": ">=20.15"
   }
 }
